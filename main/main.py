@@ -15,7 +15,7 @@ import math
 
 def getToken():
     scope = 'user-read-recently-played user-follow-read user-library-read user-top-read playlist-modify-public'
-    return spotipy.util.prompt_for_user_token(USERNAME, scope, client_id=CLIENT_ID, client_secret=CLIENT_SECRET, redirect_uri=REDIRECT_URL)
+    return spotipy.util.prompt_for_user_token(username=USERNAME, scope=scope, client_id=CLIENT_ID, client_secret=CLIENT_SECRET, redirect_uri=REDIRECT_URL)
 
 
 def getData():
